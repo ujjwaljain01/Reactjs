@@ -11,7 +11,12 @@ function App() {
 
   const addValue = () =>{
     counter++
-    setcounter(counter)
+    if(counter<21){
+      setcounter(counter)
+    }
+    else{
+      alert('The value of counter cannot execeed 20')
+    }
   }
 
   const removeValue = () =>{
